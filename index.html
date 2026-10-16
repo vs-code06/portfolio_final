@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vipul Sharma — AI Engineer & Full-Stack Developer</title>
+  <meta name="description" content="Portfolio of Vipul Sharma — AI Engineer & B.Tech AI student (9.45 GPA). Multi-agent systems, RAG pipelines, explainable ML, and full-stack engineering.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=7.0">
+</head>
+<body>
+
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Subtle Dot Grid Texture -->
+  <div class="dot-grid" aria-hidden="true"></div>
+
+  <!-- Subtle Ambient Glow -->
+  <div class="ambient-glow" aria-hidden="true"></div>
+
+  <div class="app-container">
+    <!-- TOP NAVIGATION / BRAND BAR -->
+    <header class="top-bar">
+      <div class="brand-group">
+        <span class="brand-badge">VS</span>
+        <div class="brand-info">
+          <h1 class="brand-name">Vipul Sharma</h1>
+          <span class="brand-role">AI Engineer & Full-Stack Developer</span>
+        </div>
+      </div>
+
+      <div class="top-actions">
+        <nav class="top-nav" aria-label="Section links">
+          <a href="#projects" class="top-nav-link">Projects</a>
+          <a href="#experience" class="top-nav-link">Experience</a>
+          <a href="#skills" class="top-nav-link">Skills</a>
+          <a href="#accolades" class="top-nav-link">Accolades</a>
+          <a href="#contact" class="top-nav-link">Contact</a>
+        </nav>
+
+        <div class="action-cluster">
+          <button id="open-resume-btn" class="btn btn-primary btn-sm">
+            <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+            <span>Resume</span>
+          </button>
+          <button class="btn btn-secondary btn-sm copy-email-btn" data-email="vipultheplayer@gmail.com" title="Copy email address">
+            <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            <span>Email</span>
+          </button>
+          <button id="cmd-k-btn" class="cmd-btn" title="Search portfolio (Cmd + K)">
+            <span class="cmd-sym">⌘</span><span class="cmd-key">K</span>
+          </button>
+          <button id="theme-toggle" class="icon-btn" title="Toggle theme" aria-label="Toggle dark/light theme">
+            <svg class="sun-icon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+            <svg class="moon-icon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO INTRODUCTION -->
+    <section class="hero-section">
+      <div class="status-badge">
+        <span class="status-dot"></span>
+        <span class="status-text">Available for Roles &bull; B.Tech Artificial Intelligence @ NST (<strong>9.45 GPA</strong>)</span>
+      </div>
+
+      <h2 class="hero-heading">
+        Engineering autonomous AI systems with rigorous full-stack foundations.
+      </h2>
+
+      <p class="hero-subtext">
+        I specialize in <strong>Multi-Agent Workflows (LangGraph)</strong>, <strong>Contextual RAG Pipelines</strong>, and <strong>Explainable Machine Learning</strong>, paired with production web engineering in React, TypeScript, Node.js, and FastAPI.
+      </p>
+
+      <!-- ALL-TIME RATINGS & METRICS ROW -->
+      <div class="metrics-grid reveal-on-scroll">
+        <div class="metric-card">
+          <span class="metric-label">LeetCode</span>
+          <span class="metric-value" data-target="350" data-suffix="+ Solved">350+ Solved</span>
+          <span class="metric-sub">DP, Graphs, Trees &amp; Rigor</span>
+        </div>
+        <div class="metric-card">
+          <span class="metric-label">Codeforces (Max)</span>
+          <span class="metric-value" data-target="1050" data-suffix=" Rating">1050 Rating</span>
+          <span class="metric-sub">Fast Algorithmic Reasoning</span>
+        </div>
+        <div class="metric-card">
+          <span class="metric-label">CodeChef (Max)</span>
+          <span class="metric-value" data-target="1442" data-suffix=" (★)">1442 (★)</span>
+          <span class="metric-sub">Division 3 Rated Competitor</span>
+        </div>
+        <div class="metric-card">
+          <span class="metric-label">Academic Rigor</span>
+          <span class="metric-value" data-target="9.45" data-suffix=" / 10 GPA">9.45 / 10 GPA</span>
+          <span class="metric-sub">B.Tech AI @ Newton School</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 01: PROJECTS -->
+        <!-- SECTION 01: PROJECTS -->
+        <!-- SECTION 01: PROJECTS -->
+        <!-- SECTION 01: PROJECTS -->
+        <!-- SECTION 01: PROJECTS -->
+    <section class="content-block" id="projects">
+      <div class="block-header">
+        <span class="block-num">01 / SELECTED WORK</span>
+        <h3 class="block-title">Flagship AI & Full-Stack Projects</h3>
+        <p class="block-subtitle">Production-ready architectures, explainable ML models, and scalable systems.</p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- PROJECT 1: NETFLIX CHURN STRATEGIST -->
+        <article class="project-card reveal-on-scroll">
+          <div class="project-card-top">
+            <span class="p-badge p-badge-purple">Multi-Agent AI</span>
+            <div class="p-card-links">
+              <a href="https://netflix-churn-ai.streamlit.app/" target="_blank" rel="noopener noreferrer" class="p-link-primary">Live Demo ↗</a>
+              <a href="https://github.com/vs-code06/Netflix-Churn-Strategist" target="_blank" rel="noopener noreferrer" class="p-link">GitHub ↗</a>
+            </div>
+          </div>
+          <h4 class="project-name">Netflix Customer Churn Strategist</h4>
+          <p class="project-desc">
+            End-to-end AI system predicting customer churn via explainable 97.9% Decision Trees and orchestrating targeted retention packages with LangGraph LLM agents.
+          </p>
+          <div class="project-card-footer">
+            <div class="project-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">LangGraph</span>
+              <span class="tech-tag">Scikit-Learn</span>
+              <span class="tech-tag">ChromaDB</span>
+            </div>
+            <button class="btn-see-detail" onclick="openProjectModal('netflix')">See in Detail →</button>
+          </div>
+        </article>
+
+        <!-- PROJECT 2: CIVICFLOW -->
+        <article class="project-card reveal-on-scroll">
+          <div class="project-card-top">
+            <span class="p-badge p-badge-blue">Full-Stack Web</span>
+            <div class="p-card-links">
+              <a href="https://civicflow-mu.vercel.app/" target="_blank" rel="noopener noreferrer" class="p-link-primary">Live Demo ↗</a>
+              <a href="https://github.com/vs-code06/CivicFlow" target="_blank" rel="noopener noreferrer" class="p-link">GitHub ↗</a>
+            </div>
+          </div>
+          <h4 class="project-name">CivicFlow — Smart Civic Management</h4>
+          <p class="project-desc">
+            Enterprise civic grievance platform pairing scalable Express REST APIs with an asynchronous FastAPI microservice for automated NLP triage, department routing, and live tracking.
+          </p>
+          <div class="project-card-footer">
+            <div class="project-tags">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">TypeScript</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">FastAPI</span>
+            </div>
+            <button class="btn-see-detail" onclick="openProjectModal('civicflow')">See in Detail →</button>
+          </div>
+        </article>
+
+        <!-- PROJECT 3: COMING SOON - AUTONOMOUS AGENT ORCHESTRATOR -->
+        <article class="project-card project-card-upcoming reveal-on-scroll">
+          <div class="project-card-top">
+            <span class="p-badge p-badge-amber"><span class="pulse-dot pulse-amber"></span> In Active R&D</span>
+            <span class="p-badge-status">Coming Soon</span>
+          </div>
+          <h4 class="project-name">Autonomous Agent Workflow Orchestrator</h4>
+          <p class="project-desc">
+            Distributed multi-agent orchestration framework featuring persistent state graphs, dynamic tool calling DAG compilation, and deterministic safety evaluation.
+          </p>
+          <div class="project-card-footer">
+            <div class="project-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">LangGraph</span>
+              <span class="tech-tag">FastAPI</span>
+              <span class="tech-tag">Qdrant</span>
+            </div>
+            <button class="btn-see-detail" onclick="openProjectModal('orchestrator')">See in Detail →</button>
+          </div>
+        </article>
+
+        <!-- PROJECT 4: COMING SOON - REAL-TIME EVENT STREAM -->
+        <article class="project-card project-card-upcoming reveal-on-scroll">
+          <div class="project-card-top">
+            <span class="p-badge p-badge-purple"><span class="pulse-dot pulse-purple"></span> In Prototyping</span>
+            <span class="p-badge-status">Coming Soon</span>
+          </div>
+          <h4 class="project-name">Real-Time Event Stream & Anomaly Engine</h4>
+          <p class="project-desc">
+            High-throughput event aggregation and anomaly detection pipeline designed for streaming telemetry, sub-second query latency, and automated alerting.
+          </p>
+          <div class="project-card-footer">
+            <div class="project-tags">
+              <span class="tech-tag">TypeScript</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">Kafka</span>
+              <span class="tech-tag">ClickHouse</span>
+            </div>
+            <button class="btn-see-detail" onclick="openProjectModal('telemetry')">See in Detail →</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+<!-- SECTION 02: EXPERIENCE -->
+    <section class="content-block" id="experience">
+      <div class="block-header">
+        <span class="block-tag">02 / CAREER</span>
+        <h3 class="block-title">Production Work Experience</h3>
+      </div>
+
+      <div class="experience-card reveal-on-scroll">
+        <div class="exp-top">
+          <div>
+            <h4 class="exp-company">Tradiobiz</h4>
+            <div class="exp-role-title">FullStack Developer &nbsp;&bull;&nbsp; <span class="remote-badge">Remote</span></div>
+          </div>
+          <span class="exp-dates">Jun 2025 — Jul 2025</span>
+        </div>
+
+        <div class="exp-metrics-strip">
+          <div class="exp-m-item">
+            <span class="exp-m-val">500+</span>
+            <span class="exp-m-desc">Active B2B Users</span>
+          </div>
+          <div class="exp-m-item">
+            <span class="exp-m-val">-30%</span>
+            <span class="exp-m-desc">Page Load Latency</span>
+          </div>
+          <div class="exp-m-item">
+            <span class="exp-m-val">100%</span>
+            <span class="exp-m-desc">Component Reusability</span>
+          </div>
+        </div>
+
+        <ul class="details-list">
+          <li>
+            <strong>Production Engineering:</strong> Developed and maintained responsive frontend workflows for a high-traffic B2B enterprise platform serving <strong>500+ active business users</strong>.
+          </li>
+          <li>
+            <strong>Asynchronous State Management:</strong> Integrated complex RESTful APIs with frontend views, handling edge-case network retries, optimistic UI updates, loading states, and React error boundaries.
+          </li>
+          <li>
+            <strong>Modular Component Architecture:</strong> Built reusable, testable UI component libraries that eliminated code duplication and accelerated subsequent feature velocity across the engineering team.
+          </li>
+          <li>
+            <strong>Core Web Vitals Optimization:</strong> Profiled rendering cycles and bundle footprints, <strong>slashing page load times by 30%</strong> and significantly enhancing user retention.
+          </li>
+          <li>
+            <strong>Cross-Functional Collaboration:</strong> Partnered closely with backend engineers to debug API contracts and ensure robust data validation across client-server boundaries.
+          </li>
+        </ul>
+
+        <div class="dossier-tech-row" style="margin-top: 1rem;">
+          <span class="tech-tag">React</span>
+          <span class="tech-tag">JavaScript (ES6+)</span>
+          <span class="tech-tag">REST APIs</span>
+          <span class="tech-tag">State Management</span>
+          <span class="tech-tag">Performance Profiling</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 03: TECHNICAL SKILLS -->
+    <section class="content-block" id="skills">
+      <div class="block-header">
+        <span class="block-tag">03 / CAPABILITIES</span>
+        <h3 class="block-title">Technical Skills Matrix</h3>
+      </div>
+
+      <div class="skills-grid reveal-on-scroll">
+        <div class="skill-card">
+          <div class="sc-header">
+            <span class="sc-icon">🤖</span>
+            <h4 class="sc-title">Generative AI & LLMs</h4>
+          </div>
+          <p class="sc-items">
+            Multi-Agent Workflows (LangGraph), RAG Pipelines, ChromaDB Vector DB, LangChain, Transformers, LLaMA, Hugging Face, Prompt Engineering & Evaluators
+          </p>
+        </div>
+
+        <div class="skill-card">
+          <div class="sc-header">
+            <span class="sc-icon">📊</span>
+            <h4 class="sc-title">Machine Learning & Data</h4>
+          </div>
+          <p class="sc-items">
+            Supervised Learning, Decision Trees (97.9% accuracy), Model Auditing & Explainability (XAI), PyTorch, Scikit-Learn, Pandas, NumPy, Classification & Regression
+          </p>
+        </div>
+
+        <div class="skill-card">
+          <div class="sc-header">
+            <span class="sc-icon">⚡</span>
+            <h4 class="sc-title">Full-Stack Web Engineering</h4>
+          </div>
+          <p class="sc-items">
+            React, TypeScript, Node.js, Express.js, FastAPI, RESTful APIs, Next.js, Asynchronous State Management, Component Architecture, Microservices
+          </p>
+        </div>
+
+        <div class="skill-card">
+          <div class="sc-header">
+            <span class="sc-icon">🛠️</span>
+            <h4 class="sc-title">Languages, DBs & Foundations</h4>
+          </div>
+          <p class="sc-items">
+            Python, JavaScript (ESNext), TypeScript, MongoDB Atlas, SQL, Git, GitHub Actions, Linux, Data Structures & Algorithms (350+ LeetCode), System Design
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 04: EDUCATION & ACCOLADES -->
+    <section class="content-block" id="accolades">
+      <div class="block-header">
+        <span class="block-tag">04 / CREDENTIALS</span>
+        <h3 class="block-title">Education & Accolades</h3>
+      </div>
+
+      <div class="credentials-split reveal-on-scroll">
+        <!-- Degree -->
+        <div class="credential-card">
+          <div class="cred-header">
+            <div>
+              <h4 class="cred-title">B.Tech in Artificial Intelligence</h4>
+              <span class="cred-school">Newton School of Technology, Rishihood University</span>
+            </div>
+            <span class="cred-gpa-badge">9.45 / 10 GPA</span>
+          </div>
+          <span class="cred-period">2024 — 2028</span>
+          <p class="cred-desc">
+            Rigorous engineering curriculum covering Deep Learning, Discrete Mathematics, Distributed Systems, Probability & Statistics for AI, and Advanced Algorithms.
+          </p>
+        </div>
+
+        <!-- Accolades List -->
+        <div class="credential-card">
+          <h4 class="cred-title" style="margin-bottom: 0.85rem; padding-bottom: 0.45rem; border-bottom: 1px solid var(--border);">Competitive Programming & Honors</h4>
+          <div class="honors-list">
+            <div class="honor-row">
+              <span class="honor-pill">LeetCode</span>
+              <div class="honor-desc">
+                <strong>350+ Problems Solved</strong>
+                <span>Dynamic Programming, Graph Algorithms (BFS/DFS), Trees, Binary Search</span>
+              </div>
+            </div>
+            <div class="honor-row">
+              <span class="honor-pill">CodeChef</span>
+              <div class="honor-desc">
+                <strong>All-Time Max Rating: 1442 (★)</strong>
+                <span>Division 3 rated competitor in global rated algorithm contests</span>
+              </div>
+            </div>
+            <div class="honor-row">
+              <span class="honor-pill">Codeforces</span>
+              <div class="honor-desc">
+                <strong>All-Time Max Rating: 1050</strong>
+                <span>Pupil contender; speed implementation, mathematical and edge-case rigor</span>
+              </div>
+            </div>
+            <div class="honor-row">
+              <span class="honor-pill">Open Source</span>
+              <div class="honor-desc">
+                <strong>Hacktoberfest 2025 Contributor</strong>
+                <span>Merged contributions across developer tools and ecosystem projects</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 05: CONTACT -->
+    <section class="content-block" id="contact">
+      <div class="block-header">
+        <span class="block-tag">05 / CONNECT</span>
+        <h3 class="block-title">Get in Touch</h3>
+      </div>
+
+      <div class="contact-box reveal-on-scroll">
+        <p class="contact-intro">
+          I am actively exploring <strong>AI Engineering</strong> and <strong>Software Engineering Intern / Full-Time</strong> opportunities for 2025/2026 cycles.
+        </p>
+
+        <div class="contact-channels">
+          <div class="channel-tile">
+            <span class="ch-label">Direct Email</span>
+            <a href="mailto:vipultheplayer@gmail.com" class="ch-value">vipultheplayer@gmail.com</a>
+          </div>
+          <div class="channel-tile">
+            <span class="ch-label">Location & Work Availability</span>
+            <span class="ch-value">Delhi NCR, India &bull; Open to Remote &amp; Relocation</span>
+          </div>
+        </div>
+
+        <div class="contact-links-row">
+          <a href="https://github.com/vs-code06" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub ↗</a>
+          <a href="https://linkedin.com/in/vipul-sharma-069943241/" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn ↗</a>
+          <a href="https://leetcode.com/u/Vipul_Sharma06/" target="_blank" rel="noopener noreferrer" class="footer-link">LeetCode ↗</a>
+          <a href="https://codeforces.com/profile/Vipul_Sharma06" target="_blank" rel="noopener noreferrer" class="footer-link">Codeforces ↗</a>
+        </div>
+
+        <div class="contact-cta-row">
+          <a href="mailto:vipultheplayer@gmail.com?subject=Interview%20Inquiry%20%E2%80%94%20Vipul%20Sharma" class="btn btn-primary">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+            <span>Send Message</span>
+          </a>
+          <button id="contact-open-resume" class="btn btn-secondary">View Full Resume</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="page-footer">
+      <div class="footer-content">
+        <span class="footer-txt">© 2026 Vipul Sharma. Built with precision, performance & vanilla web standards.</span>
+        <a href="#top" class="scroll-top-link">Back to top ↑</a>
+      </div>
+    </footer>
+  </div>
+
+  
+  <!-- PROJECT DETAIL MODAL -->
+  <div class="modal-overlay" id="project-detail-modal" aria-hidden="true" role="dialog" aria-labelledby="project-modal-title">
+    <div class="modal-card project-modal-card">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <div id="modal-project-badges" class="project-badge-row"></div>
+          <h3 id="project-modal-title" class="modal-title">Project Title</h3>
+          <p id="modal-project-tagline" class="modal-project-tagline">Tagline goes here</p>
+        </div>
+        <div class="modal-actions-wrap">
+          <div id="modal-project-links" class="modal-project-links"></div>
+          <button class="modal-close-btn" id="close-project-modal-btn" aria-label="Close modal">✕</button>
+        </div>
+      </div>
+      <div class="modal-body project-modal-body" id="project-modal-body">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- RESUME PREVIEW MODAL -->
+  <div class="modal-overlay" id="resume-modal" aria-hidden="true" role="dialog" aria-labelledby="resume-title">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <h3 id="resume-title" class="modal-title">Vipul Sharma — Curriculum Vitae</h3>
+          <span class="modal-sub">Updated for 2025/2026 Engineering Cycles</span>
+        </div>
+        <div class="modal-actions">
+          <button class="btn btn-sm btn-primary" onclick="window.print()" title="Print or save as PDF">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+            <span>Print / PDF</span>
+          </button>
+          <button class="icon-btn modal-close-btn" id="close-resume-btn" aria-label="Close resume modal">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="modal-body printable-resume">
+        <div class="resume-sheet">
+          <div class="resume-sheet-header">
+            <h1 class="resume-name">VIPUL SHARMA</h1>
+            <div class="resume-contact-line">
+              <a href="mailto:vipultheplayer@gmail.com">vipultheplayer@gmail.com</a> •
+              <a href="https://linkedin.com/in/vipul-sharma-069943241/">LinkedIn</a> •
+              <a href="https://github.com/vs-code06">GitHub</a> •
+              <a href="https://leetcode.com/u/Vipul_Sharma06/">LeetCode</a>
+            </div>
+          </div>
+
+          <div class="resume-sec">
+            <h2 class="resume-sec-title">SUMMARY</h2>
+            <p>
+              AI-focused developer and B.Tech Artificial Intelligence student with a <strong>9.45/10 GPA</strong>, hands-on experience building Machine Learning, Generative AI, and full-stack systems. Experienced in RAG pipelines, multi-agent workflows, explainable ML, backend APIs, and modern web development, with a focus on building practical AI-driven applications.
+            </p>
+          </div>
+
+          <div class="resume-sec">
+            <h2 class="resume-sec-title">EDUCATION</h2>
+            <div class="resume-entry">
+              <div class="entry-row">
+                <strong>B.Tech in Artificial Intelligence</strong>
+                <span>2024 — 2028</span>
+              </div>
+              <div class="entry-row italic">
+                <span>Newton School of Technology, Rishihood University</span>
+                <span class="highlight-val">GPA: 9.45 / 10</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="resume-sec">
+            <h2 class="resume-sec-title">EXPERIENCE</h2>
+            <div class="resume-entry">
+              <div class="entry-row">
+                <strong>FullStack Developer</strong>
+                <span>Jun 2025 — Jul 2025</span>
+              </div>
+              <div class="entry-row italic">
+                <span>Tradiobiz</span>
+                <span>Remote</span>
+              </div>
+              <ul class="resume-bullets">
+                <li>Developed and maintained responsive frontend interfaces for a B2B platform serving 500+ users using modern web development practices.</li>
+                <li>Integrated REST APIs with frontend workflows, handling asynchronous data fetching, API responses, loading states, and error scenarios.</li>
+                <li>Built reusable and modular UI components to improve code maintainability and accelerate development of new features.</li>
+                <li>Optimized frontend rendering and application performance, reducing page load time by 30% and improving overall user experience.</li>
+                <li>Collaborated with backend developers to debug API integration issues and improve data flow between frontend and backend services.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="resume-sec">
+            <h2 class="resume-sec-title">PROJECTS</h2>
+            <div class="resume-entry">
+              <div class="entry-row">
+                <strong>Netflix Customer Churn Strategist</strong>
+                <span>
+                  <a href="https://github.com/vs-code06/Netflix-Churn-Strategist">GitHub</a> | 
+                  <a href="https://netflix-churn-ai.streamlit.app/">Live Demo</a>
+                </span>
+              </div>
+              <div class="entry-tech"><strong>Tech Stack:</strong> Python, Scikit-Learn, LangChain, LangGraph, ChromaDB, LLaMA, Streamlit</div>
+              <ul class="resume-bullets">
+                <li>Built an end-to-end AI system that predicts customer churn and generates personalized retention strategies using LLMs.</li>
+                <li>Developed a Decision Tree classifier achieving 97.9% accuracy with decision-path tracing for model explainability.</li>
+                <li>Built a RAG pipeline using ChromaDB to retrieve relevant customer context for strategy generation.</li>
+                <li>Implemented a multi-agent workflow with LangGraph to generate and evaluate personalized retention strategies.</li>
+                <li>Developed a Streamlit dashboard for real-time predictions, strategy generation, and AI-assisted model auditing.</li>
+              </ul>
+            </div>
+
+            <div class="resume-entry">
+              <div class="entry-row">
+                <strong>CivicFlow — Smart Civic Management Platform</strong>
+                <span>
+                  <a href="https://github.com/vs-code06/CivicFlow-backend">GitHub</a> | 
+                  <a href="https://civicflow-mu.vercel.app/">Live Demo</a>
+                </span>
+              </div>
+              <div class="entry-tech"><strong>Tech Stack:</strong> React, TypeScript, Node.js, Express.js, MongoDB, FastAPI, LangChain</div>
+              <ul class="resume-bullets">
+                <li>Developed a full-stack civic complaint management platform with AI-driven insights and automated reporting.</li>
+                <li>Designed backend APIs for complaint creation, assignment, tracking, and workflow management.</li>
+                <li>Integrated a FastAPI and LangChain AI microservice for intelligent complaint analysis and automated reporting.</li>
+                <li>Implemented role-based dashboards and real-time complaint tracking for multiple user roles.</li>
+                <li>Designed scalable MongoDB schemas and responsive React dashboards for data management and visualization.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="resume-sec">
+            <h2 class="resume-sec-title">TECHNICAL SKILLS</h2>
+            <p><strong>Languages:</strong> Python, JavaScript, TypeScript, SQL</p>
+            <p><strong>Machine Learning:</strong> Supervised Learning, Regression, Classification, Decision Trees, Neural Networks, Transformers, PyTorch, Scikit-Learn</p>
+            <p><strong>Generative AI:</strong> Large Language Models, RAG, LangChain, LangGraph, Hugging Face, Vector Databases</p>
+            <p><strong>Software Development:</strong> React, Node.js, Express.js, FastAPI, MongoDB, Git, Streamlit</p>
+          </div>
+
+          <div class="resume-sec">
+            <h2 class="resume-sec-title">ACHIEVEMENTS</h2>
+            <ul class="resume-bullets">
+              <li><strong>LeetCode:</strong> Solved 350+ problems.</li>
+              <li><strong>Competitive Programming:</strong> CodeChef (All-Time Max 1442); Codeforces (All-Time Max 1050).</li>
+              <li><strong>Open Source:</strong> Hacktoberfest 2025 Contributor.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- COMMAND PALETTE (CMD+K) -->
+  <div class="cmd-palette-overlay" id="cmd-palette" aria-hidden="true" role="dialog" aria-labelledby="cmd-search-input">
+    <div class="cmd-palette-card">
+      <div class="cmd-search-wrap">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input type="text" id="cmd-search-input" class="cmd-search-input" placeholder="Search portfolio or jump to section..." autocomplete="off">
+        <kbd class="kbd-badge">ESC</kbd>
+      </div>
+
+      <div class="cmd-results" id="cmd-results">
+        <div class="cmd-group-label">Navigation</div>
+        <div class="cmd-item" data-action="nav" data-target="#projects">
+          <span class="cmd-item-icon">🚀</span>
+          <span class="cmd-item-title">Flagship Projects (Netflix Churn & CivicFlow)</span>
+          <kbd class="cmd-item-kbd">P</kbd>
+        </div>
+        <div class="cmd-item" data-action="nav" data-target="#experience">
+          <span class="cmd-item-icon">💼</span>
+          <span class="cmd-item-title">Work Experience (Tradiobiz)</span>
+          <kbd class="cmd-item-kbd">E</kbd>
+        </div>
+        <div class="cmd-item" data-action="nav" data-target="#skills">
+          <span class="cmd-item-icon">🧠</span>
+          <span class="cmd-item-title">Technical Skills Matrix</span>
+          <kbd class="cmd-item-kbd">S</kbd>
+        </div>
+        <div class="cmd-item" data-action="nav" data-target="#accolades">
+          <span class="cmd-item-icon">🏆</span>
+          <span class="cmd-item-title">Accolades & Ratings (CF 1050, CC 1442, LC 350+)</span>
+          <kbd class="cmd-item-kbd">A</kbd>
+        </div>
+
+        <div class="cmd-group-label">Actions</div>
+        <div class="cmd-item" data-action="resume">
+          <span class="cmd-item-icon">📄</span>
+          <span class="cmd-item-title">Open Curriculum Vitae (Resume)</span>
+          <kbd class="cmd-item-kbd">R</kbd>
+        </div>
+        <div class="cmd-item" data-action="copy-email">
+          <span class="cmd-item-icon">✉️</span>
+          <span class="cmd-item-title">Copy Email (vipultheplayer@gmail.com)</span>
+          <kbd class="cmd-item-kbd">C</kbd>
+        </div>
+        <div class="cmd-item" data-action="toggle-theme">
+          <span class="cmd-item-icon">🌓</span>
+          <span class="cmd-item-title">Toggle Dark / Light Theme</span>
+          <kbd class="cmd-item-kbd">T</kbd>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
