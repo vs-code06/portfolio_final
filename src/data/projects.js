@@ -2,7 +2,7 @@ export const PROJECTS_SUMMARY = [
   {
     id: "netflix",
     category: "Multi-Agent AI",
-    badgeClass: "p-badge-purple",
+    badgeClass: "p-badge-accent",
     title: "Netflix Customer Churn Strategist",
     desc: "End-to-end AI system predicting customer churn via explainable 97.9% Decision Trees and orchestrating targeted retention packages with LangGraph LLM agents.",
     tags: ["Python", "LangGraph", "Scikit-Learn", "ChromaDB"],
@@ -15,7 +15,7 @@ export const PROJECTS_SUMMARY = [
   {
     id: "civicflow",
     category: "Full-Stack Web",
-    badgeClass: "p-badge-blue",
+    badgeClass: "p-badge-accent",
     title: "CivicFlow — Smart Civic Management",
     desc: "Enterprise civic grievance platform pairing scalable Express REST APIs with an asynchronous FastAPI microservice for automated NLP triage, department routing, and live tracking.",
     tags: ["React", "TypeScript", "Node.js", "FastAPI"],
@@ -28,23 +28,23 @@ export const PROJECTS_SUMMARY = [
   {
     id: "orchestrator",
     category: "In Active R&D",
-    badgeClass: "p-badge-amber",
+    badgeClass: "p-badge-outline",
     title: "Autonomous Agent Workflow Orchestrator",
     desc: "Distributed multi-agent orchestration framework featuring persistent state graphs, dynamic tool calling DAG compilation, and deterministic safety evaluation.",
     tags: ["Python", "LangGraph", "FastAPI", "Qdrant"],
     statusBadge: "Coming Soon",
-    pulseClass: "pulse-amber",
+    pulseClass: "pulse-accent",
     isUpcoming: true
   },
   {
     id: "telemetry",
     category: "In Prototyping",
-    badgeClass: "p-badge-purple",
+    badgeClass: "p-badge-outline",
     title: "Real-Time Event Stream & Anomaly Engine",
     desc: "High-throughput event aggregation and anomaly detection pipeline designed for streaming telemetry, sub-second query latency, and automated alerting.",
     tags: ["TypeScript", "Node.js", "Kafka", "ClickHouse"],
     statusBadge: "Coming Soon",
-    pulseClass: "pulse-purple",
+    pulseClass: "pulse-accent",
     isUpcoming: true
   }
 ];
@@ -54,9 +54,9 @@ export const PROJECT_DETAILS = {
     title: "Netflix Customer Churn Strategist",
     tagline: "Autonomous multi-agent retention engine pairing explainable 97.9% decision tree telemetry with LangGraph LLM consensus playbooks.",
     badges: [
-      { text: "Multi-Agent AI", class: "p-badge-purple" },
-      { text: "Explainable ML (97.9%)", class: "p-badge-green" },
-      { text: "Contextual RAG", class: "p-badge-blue" }
+      { text: "Multi-Agent AI", class: "p-badge-accent" },
+      { text: "Explainable ML (97.9%)", class: "p-badge-accent" },
+      { text: "Contextual RAG", class: "p-badge-outline" }
     ],
     links: [
       { label: "Live Demo ↗", href: "https://netflix-churn-ai.streamlit.app/", primary: true },
@@ -93,9 +93,9 @@ export const PROJECT_DETAILS = {
     title: "CivicFlow — Smart Civic Management Platform",
     tagline: "Enterprise-grade civic grievance platform pairing scalable REST APIs with an AI microservice for automated triage, department routing, and live tracking.",
     badges: [
-      { text: "Full-Stack Web", class: "p-badge-blue" },
-      { text: "FastAPI Microservice", class: "p-badge-purple" },
-      { text: "LangChain NLP", class: "p-badge-green" }
+      { text: "Full-Stack Web", class: "p-badge-accent" },
+      { text: "FastAPI Microservice", class: "p-badge-accent" },
+      { text: "LangChain NLP", class: "p-badge-outline" }
     ],
     links: [
       { label: "Live Demo ↗", href: "https://civicflow-mu.vercel.app/", primary: true },
@@ -132,7 +132,7 @@ export const PROJECT_DETAILS = {
     title: "Autonomous Agent Workflow Orchestrator",
     tagline: "Distributed multi-agent orchestration framework featuring persistent state graphs, dynamic tool calling DAG compilation, and deterministic safety evaluation.",
     badges: [
-      { text: "In Active R&D", class: "p-badge-amber" },
+      { text: "In Active R&D", class: "p-badge-accent" },
       { text: "Autonomous Systems", class: "p-badge-outline" },
       { text: "Target: Q4 2026", class: "p-badge-outline" }
     ],
@@ -166,7 +166,7 @@ export const PROJECT_DETAILS = {
     title: "Real-Time Event Stream & Anomaly Engine",
     tagline: "High-throughput event aggregation and anomaly detection pipeline designed for streaming telemetry, sub-second query latency, and automated alerting.",
     badges: [
-      { text: "In Prototyping", class: "p-badge-purple" },
+      { text: "In Prototyping", class: "p-badge-accent" },
       { text: "Distributed Systems", class: "p-badge-outline" },
       { text: "Target: Q1 2027", class: "p-badge-outline" }
     ],

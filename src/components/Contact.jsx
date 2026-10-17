@@ -6,6 +6,7 @@ export default function Contact({ onOpenResume, onCopyEmail }) {
       <div className="block-header">
         <span className="block-tag">05 / CONNECT</span>
         <h3 className="block-title">Get in Touch</h3>
+        <p className="block-subtitle">Available for AI Engineering and Software Engineering opportunities for 2025/2026 cycles.</p>
       </div>
 
       <div className="contact-box reveal-on-scroll">

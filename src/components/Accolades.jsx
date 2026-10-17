@@ -7,6 +7,7 @@ export default function Accolades() {
       <div className="block-header">
         <span className="block-tag">04 / CREDENTIALS</span>
         <h3 className="block-title">Education &amp; Accolades</h3>
+        <p className="block-subtitle">Academic standing at Newton School of Technology and verified competitive programming ratings.</p>
       </div>
 
       <div className="credentials-split reveal-on-scroll">

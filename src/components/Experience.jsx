@@ -6,7 +6,8 @@ export default function Experience() {
     <section className="content-block" id="experience">
       <div className="block-header">
         <span className="block-tag">02 / CAREER</span>
-        <h3 className="block-title">Production Work Experience</h3>
+        <h3 className="block-title">Work Experience</h3>
+        <p className="block-subtitle">Production engineering, API integration, and performance optimization at scale.</p>
       </div>
 
       <div className="experience-card reveal-on-scroll">

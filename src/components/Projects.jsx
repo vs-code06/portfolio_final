@@ -5,9 +5,9 @@ export default function Projects({ onOpenDetail }) {
   return (
     <section className="content-block" id="projects">
       <div className="block-header">
-        <span className="block-num">01 / SELECTED WORK</span>
-        <h3 className="block-title">Flagship AI &amp; Full-Stack Projects</h3>
-        <p className="block-subtitle">Production-ready architectures, explainable ML models, and scalable systems.</p>
+        <span className="block-tag">01 / PROJECTS</span>
+        <h3 className="block-title">Featured Projects</h3>
+        <p className="block-subtitle">Production architectures, explainable ML models, and autonomous AI systems.</p>
       </div>
 
       <div className="projects-grid">

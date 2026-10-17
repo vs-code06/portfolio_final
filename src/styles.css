@@ -26,17 +26,17 @@
   --accent-primary: #f8fafc;
   --accent-contrast: #090a0f;
 
-  --accent-emerald: #10b981;
-  --accent-emerald-bg: rgba(16, 185, 129, 0.08);
-  --accent-emerald-border: rgba(16, 185, 129, 0.24);
-
   --accent-blue: #38bdf8;
   --accent-blue-bg: rgba(56, 189, 248, 0.08);
   --accent-blue-border: rgba(56, 189, 248, 0.22);
 
-  --accent-purple: #c084fc;
-  --accent-purple-bg: rgba(192, 132, 252, 0.08);
-  --accent-purple-border: rgba(192, 132, 252, 0.22);
+  --accent-emerald: #38bdf8;
+  --accent-emerald-bg: rgba(56, 189, 248, 0.08);
+  --accent-emerald-border: rgba(56, 189, 248, 0.22);
+
+  --accent-purple: #38bdf8;
+  --accent-purple-bg: rgba(56, 189, 248, 0.08);
+  --accent-purple-border: rgba(56, 189, 248, 0.22);
 
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font-mono: 'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace;
@@ -73,17 +73,17 @@
   --accent-primary: #0f172a;
   --accent-contrast: #ffffff;
 
-  --accent-emerald: #059669;
-  --accent-emerald-bg: rgba(5, 150, 105, 0.08);
-  --accent-emerald-border: rgba(5, 150, 105, 0.22);
-
   --accent-blue: #0284c7;
   --accent-blue-bg: rgba(2, 132, 199, 0.08);
   --accent-blue-border: rgba(2, 132, 199, 0.22);
 
-  --accent-purple: #9333ea;
-  --accent-purple-bg: rgba(147, 51, 234, 0.08);
-  --accent-purple-border: rgba(147, 51, 234, 0.22);
+  --accent-emerald: #0284c7;
+  --accent-emerald-bg: rgba(2, 132, 199, 0.08);
+  --accent-emerald-border: rgba(2, 132, 199, 0.22);
+
+  --accent-purple: #0284c7;
+  --accent-purple-bg: rgba(2, 132, 199, 0.08);
+  --accent-purple-border: rgba(2, 132, 199, 0.22);
 }
 
 /* Base Reset */
@@ -442,28 +442,41 @@ button {
 }
 
 .block-header {
-  margin-bottom: 1.35rem;
+  margin-bottom: 1.75rem;
   border-bottom: 1px solid var(--border);
-  padding-bottom: 0.65rem;
+  padding-bottom: 0.85rem;
   display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.35rem;
 }
 
-.block-tag {
+.block-tag,
+.block-num {
   font-family: var(--font-mono);
-  font-size: 0.65rem;
-  color: var(--text-muted);
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--accent-blue);
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  font-weight: 500;
+  display: inline-block;
 }
 
 .block-title {
-  font-size: 1.25rem;
-  font-weight: 600;
-  letter-spacing: -0.02em;
+  font-size: 1.55rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
   color: var(--text-primary);
+  line-height: 1.25;
+  margin: 0;
+}
+
+.block-subtitle {
+  font-size: 0.86rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  max-width: 650px;
+  margin: 0;
 }
 
 /* ==========================================================================
@@ -1746,7 +1759,7 @@ button {
   top: 0;
   left: 0;
   height: 2px;
-  background: linear-gradient(90deg, var(--accent-emerald), var(--accent-blue), var(--accent-purple));
+  background: var(--accent-blue);
   z-index: 999;
   transform-origin: left;
   transform: scaleX(0);
@@ -2133,11 +2146,21 @@ button {
   color: var(--text-muted);
 }
 
-.p-badge-purple { color: #c084fc; border-color: rgba(192, 132, 252, 0.3); background: rgba(192, 132, 252, 0.08); }
-.p-badge-green  { color: #34d399; border-color: rgba(52, 211, 153, 0.3); background: rgba(52, 211, 153, 0.08); }
-.p-badge-blue   { color: #38bdf8; border-color: rgba(56, 189, 248, 0.3); background: rgba(56, 189, 248, 0.08); }
-.p-badge-amber  { color: #fbbf24; border-color: rgba(251, 191, 36, 0.3); background: rgba(251, 191, 36, 0.08); }
-.p-badge-outline { color: var(--text-secondary); border-color: var(--border); background: var(--bg-surface-elevated); }
+.p-badge-accent,
+.p-badge-purple,
+.p-badge-green,
+.p-badge-blue,
+.p-badge-amber {
+  color: var(--accent-blue);
+  border-color: var(--accent-blue-border);
+  background: var(--accent-blue-bg);
+}
+
+.p-badge-outline {
+  color: var(--text-secondary);
+  border-color: var(--border);
+  background: var(--bg-surface-elevated);
+}
 
 .p-badge-status {
   font-family: var(--font-mono);
@@ -2185,14 +2208,22 @@ button {
 }
 
 /* Radar Pulse Dots */
-.pulse-amber {
-  background: #fbbf24 !important;
-  box-shadow: 0 0 6px #fbbf24 !important;
+.pulse-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 4px;
+  vertical-align: middle;
+  background: var(--accent-blue) !important;
+  box-shadow: 0 0 6px var(--accent-blue) !important;
 }
 
-.pulse-purple {
-  background: #c084fc !important;
-  box-shadow: 0 0 6px #c084fc !important;
+.pulse-amber,
+.pulse-purple,
+.pulse-accent {
+  background: var(--accent-blue) !important;
+  box-shadow: 0 0 6px var(--accent-blue) !important;
 }
 
 /* ==========================================================================

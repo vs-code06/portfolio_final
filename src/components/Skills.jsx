@@ -6,7 +6,8 @@ export default function Skills() {
     <section className="content-block" id="skills">
       <div className="block-header">
         <span className="block-tag">03 / CAPABILITIES</span>
-        <h3 className="block-title">Technical Skills Matrix</h3>
+        <h3 className="block-title">Technical Skills</h3>
+        <p className="block-subtitle">Core competencies spanning AI/ML workflows, modern web frameworks, and backend systems.</p>
       </div>
 
       <div className="skills-grid reveal-on-scroll">
